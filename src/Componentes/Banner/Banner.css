@@ -1,10 +1,16 @@
 .banner {
-    background-color: #6278F7;
+    background-color: #F6F6F6;
     text-align: center;
-
 }
 
-.banner {
-    max-width: 100%;
-    
+.banner img {
+    width: 100%;
+    max-width: 1920px; /* Largura máxima mais adequada para telas grandes */
+    height: auto;
+    min-height: 300px; /* Altura mínima para garantir boa visualização */
+    max-height: 500px; /* Altura máxima aumentada */
+    object-fit: cover;
+    object-position: center; /* Centraliza a imagem */
+    image-rendering: -webkit-optimize-contrast; /* Melhora a nitidez em webkit browsers */
+    image-rendering: crisp-edges; /* Melhora a nitidez em outros browsers */
 }
